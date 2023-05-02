@@ -1,0 +1,218 @@
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #17B890;
+    --secondary-color: #6F9CEB;
+    --primary-shadow: #5E807F;
+    --secondary-shadow: #306BAC;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav ul, .bio-text{
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  body {
+    font-family: var(--font-family);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-size: 20px;
+    font-weight: var(--bold-font);
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .bio-text li{
+    margin-bottom: 1px;
+    line-height: var(--line-height);
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+  
+  .Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .Profile img {
+    position: sticky;
+    left: -80px;
+    width: 20%;
+    height: auto;
+    border-radius: 8%;
+  }
+
+  .bio-title {
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  main {
+    background-color: var(--bg-color);
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .more-about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+
+  .bio-more {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .more-about li {
+    line-height: 1.6;
+    margin-bottom: 0px;
+  }
+
+  .Skills {
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .headers {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-tab {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .project-tab h6 {
+    font-size: 30px;
+    color: var(--primary-color);
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .git {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .git img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .git figcaption {
+    padding: 20px;
+  }
+
+  .project-tab p {
+    padding: 20px;
+  }
+
+  section:last-of-type {
+    padding-bottom: 10vh;
+  }
