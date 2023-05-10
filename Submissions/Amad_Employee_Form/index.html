@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Form for CET4">
+    <link rel="stylesheet" href="styles.css">
+    <title>Employee Form</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Form</h1>
+            <nav>
+                <ul>
+                    <li><a href="#bio-info">BIO</a></li>
+                    <li><a href="#address">ADDRESS</a></li>
+                    <li><a href="#job">JOB</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <form>
+            <section role="region" aria-labelledby="bio-info">
+                <h2 id="bio-info">Personal Information</h2>
+                <div class="info">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+                <div class="info">
+                    <label for="middle-name">Middle Name: </label>
+                    <input type="text" name="middle-name" id="middle-name" required>
+                </div>
+                <div class="info">
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+                <div class="info">
+                    <label for="employee-email">Email: </label>
+                    <input type="email" name="employee-email" id="employee-email" required>
+                </div>
+                <div class="info">
+                    <label for="birth-date">Date of Birth: </label>
+                    <input type="date" name="birth-date" id="birth-date" required>
+                </div>
+                <div class="info">
+                    <label for="phone-no">Phone: </label>
+                    <input type="tel" name="phone-no" id="phone-no" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="09XX-XXX-XXXX" required>
+                </div>
+                    <div class="info">
+                      <label for="gender">Gender: </label>
+                      <select name="gender" id="gender" required>
+                        <option value="">Select an option</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+
+            </section>
+            <section role="region" aria-labelledby="address">
+                <h2 id="address">Address</h2>
+                <div class="info">
+                    <label for="street-address">Street Address: </label>
+                    <input type="text" name="street-address" id="street-address" required> 
+                </div>
+                <div class="info">
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id="city" required>
+                </div>
+                <div class="info">
+                    <label for="province">Province: </label>
+                    <input type="text" name="province" id="province" required>
+                </div>
+                <div class="info">
+                    <label for="postal-code">Postal / Zip Code: </label>
+                    <input type="text" name="city" id="city" required>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="job">
+                <h2 id="job">Job</h2>
+                <div class="info">
+                    <label for="apply-pos">Applying Position: </label>
+                    <input type="text" name="apply-pos" id="apply-pos" required>
+                </div>
+                <div class="radio">
+                    <h3>Type of Work</h3>
+                    <ul class="answers-list">
+                        <li><label for="type-of-work"><input type="radio" id="type1" name="work" value="Permanent" required>Permanent</label></li>
+                        <li><label for="type-of-work"><input type="radio" id="type2" name="work" value="Both">Both</label></li>
+                        <li><label for="type-of-work"><input type="radio" id="type3" name="work" value="Temporary">Temporary</label></li>
+                        <li><label for="type-of-work"><input type="radio" id="type4" name="work" value="Other">Other</label></li>
+                    </ul>
+                </div>
+                <h4>Please Upload Your Resume</h4>
+                <div>
+                    <label for="file">File</label>
+                    <input id="file" name="file" type="file" />
+                    <button id="file">Upload</button>
+                </div>
+                <h4>Additional Comments</h4>
+                  <div class="answer">
+                    <textarea id="css-questions" name="css-questions" rows="5" cols="80" placeholder="Add comments here..."></textarea>
+                  </div>
+              <button type="submit" id="Submit">Send</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
